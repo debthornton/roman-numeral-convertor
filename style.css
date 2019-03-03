@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700");
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: "Playfair Display", sans-serif;
+  color: #efeff0;
+  background-color: #0f5984;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  overflow: hidden;
+  background-image: url(https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg?cs=srgb&dl=amphitheater-arches-architecture-1797161.jpg&fm=jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 2000px rgba(15, 89, 132, 0.55);
+  text-align: center;
+  border: 15px solid #060a0f; }
+  @media (max-width: 1350px) {
+    body {
+      justify-content: space-between;
+      position: relative; } }
+
+header {
+  font-size: 2.5em;
+  flex: 1 1 0;
+  align-self: center;
+  letter-spacing: 1px;
+  text-shadow: 0px 10px 9px rgba(0, 0, 0, 0.6);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  align-items: stretch;
+  margin-top: -25px; }
+  @media (max-width: 1350px) {
+    header {
+      flex: 0 1 auto; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+    header {
+      font-size: 1.5em;
+      margin-top: 0; } }
+  @media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (orientation: landscape) {
+    header {
+      font-size: 1.5em;
+      margin-top: -25px; } }
+  @media (max-width: 1060px) {
+    header h1 {
+      font-size: 1.6em; } }
+  @media (max-width: 640px) {
+    header h1 {
+      font-size: 1.2em; } }
+  header h3 {
+    font-size: 0.6em;
+    margin-top: -60px;
+    text-align: right; }
+    @media (max-width: 1350px) {
+      header h3 {
+        text-align: center; } }
+    @media (max-width: 1060px) {
+      header h3 {
+        margin-top: -40px; } }
+    @media (max-width: 640px) {
+      header h3 {
+        margin-top: -20px; } }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+      header h3 {
+        margin-top: -30px;
+        font-size: 0.9em;
+        text-align: right; } }
+    @media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (orientation: landscape) {
+      header h3 {
+        margin-top: -30px;
+        font-size: 0.9em;
+        text-align: right; } }
+
+main {
+  width: 100%;
+  flex: 2 2 auto;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  /* Chrome <=56, Safari < 10 */
+  /* FF 4-18 */
+  /* FF 19-51 */
+  /* IE 10+ */
+  /* Modern Browsers */
+  /* Chrome <=56, Safari < 10 */
+  /* FF 4-18 */
+  /* FF 19-50 */
+  /* IE 10+ */
+  /* Modern Browsers */ }
+  @media (max-width: 1350px) {
+    main {
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      flex: 0 1 auto; } }
+  @media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (orientation: landscape) {
+    main {
+      margin-top: -25px; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+    main {
+      margin-top: -40px; } }
+  main .input-div-arabic {
+    order: 1;
+    display: flex;
+    flex-direction: column; }
+    main .input-div-arabic .arabic {
+      order: 1;
+      align-self: center; }
+    main .input-div-arabic label {
+      order: 2;
+      margin-top: 15px;
+      opacity: 0;
+      align-self: flex-start; }
+      @media (max-width: 1350px) {
+        main .input-div-arabic label {
+          align-self: center; } }
+      @media (max-width: 640px) {
+        main .input-div-arabic label {
+          font-size: 0.87em;
+          margin: 4px 0 10px 0; } }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+        main .input-div-arabic label {
+          margin: 4px 0 5px 0; } }
+      @media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (orientation: landscape) {
+        main .input-div-arabic label {
+          margin: 4px 0 5px 0; } }
+    main .input-div-arabic .active {
+      opacity: 1; }
+  main .input-div-roman {
+    order: 3; }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+      main .input-div-roman {
+        margin-top: -5px 0 15px 0; } }
+    @media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (orientation: landscape) {
+      main .input-div-roman {
+        margin-top: -35px 0 15px 0; } }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+      main .input-div-roman {
+        margin-top: -30px; } }
+    main .input-div-roman .roman {
+      text-transform: uppercase; }
+      main .input-div-roman .roman:hover {
+        cursor: default; }
+  main input {
+    border: none;
+    border-bottom: 18px solid #efeff0;
+    color: #efeff0;
+    background-color: transparent;
+    padding: 0;
+    padding-bottom: 5px;
+    font-size: 4em;
+    text-align: center;
+    box-shadow: 0px 25px 10px -10px rgba(0, 0, 0, 0.6);
+    font-family: "Playfair Display", sans-serif;
+    width: 600px; }
+    main input:focus {
+      outline: none; }
+    @media (max-width: 1060px) {
+      main input {
+        margin-top: 0px; } }
+    @media (max-width: 640px) {
+      main input {
+        width: 300px;
+        font-size: 2.5em;
+        border-bottom: 8px solid #efeff0; } }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+      main input {
+        margin-top: -30px;
+        border-bottom: 8px solid #efeff0;
+        font-size: 2.5em;
+        width: 500px; } }
+    @media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (orientation: landscape) {
+      main input {
+        margin-top: -10px;
+        border-bottom: 8px solid #efeff0;
+        font-size: 2.5em;
+        width: 500px; } }
+  main ::placeholder {
+    font-size: 0.8em;
+    text-transform: none; }
+  main ::-webkit-input-placeholder {
+    opacity: 0.75;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s; }
+  main :-moz-placeholder {
+    opacity: 0.75;
+    -moz-transition: opacity .5s;
+    transition: opacity .5s; }
+  main ::-moz-placeholder {
+    opacity: 0.75;
+    -moz-transition: opacity .5s;
+    transition: opacity .5s; }
+  main :-ms-input-placeholder {
+    opacity: 0.75;
+    -ms-transition: opacity .5s;
+    transition: opacity .5s; }
+  main ::placeholder {
+    opacity: 0.75;
+    transition: opacity .5s; }
+  main .arabic:focus::-webkit-input-placeholder {
+    opacity: 0; }
+  main .arabic:focus:-moz-placeholder {
+    opacity: 0; }
+  main .arabic:focus::-moz-placeholder {
+    opacity: 0; }
+  main .arabic:focus:-ms-input-placeholder {
+    opacity: 0; }
+  main .arabic:focus::placeholder {
+    opacity: 0; }
+  main .equal-sign {
+    order: 2;
+    font-size: 9em;
+    text-shadow: 0px 10px 9px rgba(0, 0, 0, 0.6);
+    margin-top: -70px; }
+    @media (max-width: 1350px) {
+      main .equal-sign {
+        align-self: center; } }
+    @media (max-width: 1060px) {
+      main .equal-sign {
+        font-size: 5em; } }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+      main .equal-sign {
+        margin-top: -40px;
+        font-size: 5em; } }
+    @media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (orientation: landscape) {
+      main .equal-sign {
+        margin: -55px 0 5px 0;
+        font-size: 5em; } }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+      main .equal-sign {
+        margin-top: -40px; } }
+
+footer {
+  width: 100%;
+  background-color: #c8c8cb;
+  color: #0f5984; }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+    footer {
+      font-size: 0.9em; } }
+  @media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (orientation: landscape) {
+    footer {
+      font-size: 0.9em; } }
+  footer a {
+    text-decoration: none;
+    color: #0f5984;
+    font-weight: 700; }
+    footer a:hover {
+      font-size: 1.1em; }
+
+/*# sourceMappingURL=style.css.map */

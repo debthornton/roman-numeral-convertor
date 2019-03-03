@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+
+$font: "Playfair Display", sans-serif;
+$font-color: #efeff0;
+$base-color: #0f5984;
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: $font;
+    color: $font-color;
+    background-color: $base-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    overflow: hidden;
+    background-image: url(https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg?cs=srgb&dl=amphitheater-arches-architecture-1797161.jpg&fm=jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 2000px rgba(15, 89, 132, 0.55);
+    text-align: center;
+    border: 15px solid #060a0f;
+    
+    @media (max-width: 1350px) {
+        justify-content: space-between;
+        position: relative;     
+    }
+}
+
+header {
+    font-size: 2.5em;
+    flex: 1 1 0;
+    align-self: center;
+    letter-spacing: 1px;
+    text-shadow: 0px 10px 9px rgba(0,0,0,0.6);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: stretch;
+    margin-top: -25px;
+    
+    @media (max-width: 1350px) {
+        flex: 0 1 auto;
+    }
+    @media only screen //iPhone X Landscape
+    and (min-device-width : 375px) 
+    and (max-device-width : 812px) 
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation : landscape) {
+        font-size: 1.5em;
+        margin-top: 0;
+    }
+    @media only screen //iPhone 6,7,8 Galaxy S9/S9+ Landscape
+    and (min-device-width : 360px) 
+    and (max-device-width : 740px) 
+    and (orientation : landscape) {
+        font-size: 1.5em;
+        margin-top: -25px;
+    }
+    
+    h1 {
+        
+        @media (max-width: 1060px) {
+            font-size: 1.6em;
+        }
+        @media (max-width: 640px) {
+            font-size: 1.2em;
+        }
+       
+    }
+    
+    h3 {
+        font-size: 0.6em;
+        margin-top: -60px;
+        text-align: right;
+        
+        @media (max-width: 1350px) {
+            text-align: center;
+        }
+        @media (max-width: 1060px) {
+            margin-top: -40px;
+        }
+        @media (max-width: 640px) {
+            margin-top: -20px;
+        }
+        @media only screen //iPhone X Landscape
+        and (min-device-width : 375px) 
+        and (max-device-width : 812px) 
+        and (-webkit-device-pixel-ratio : 3)
+        and (orientation : landscape) {
+            margin-top: -30px;
+            font-size: 0.9em;
+            text-align: right;
+        }
+        @media only screen //iPhone 6,7,8 Galaxy S9/S9+ Landscape
+        and (min-device-width : 360px) 
+        and (max-device-width : 740px) 
+        and (orientation : landscape) {
+            margin-top: -30px;
+            font-size: 0.9em;
+            text-align: right;
+        }
+    }
+}
+
+main {
+    width: 100%; 
+    flex: 2 2 auto;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    position: relative;
+   
+    @media (max-width: 1350px) {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        flex: 0 1 auto;
+    }
+    @media only screen //iPhone 6,7,8 Galaxy S9/S9+ Landscape
+    and (min-device-width : 360px) 
+    and (max-device-width : 740px) 
+    and (orientation : landscape) {
+        margin-top: -25px;
+    }
+     @media only screen //iPhone 6,7,8 Portrait
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
+    and (orientation : portrait) {
+        margin-top: -40px;
+    }
+    
+    
+    .input-div-arabic {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        
+        .arabic {
+            order: 1;
+            align-self: center;
+        }
+        
+        label {
+            order: 2;
+            margin-top: 15px;
+            opacity: 0;
+            align-self: flex-start;
+            
+            @media(max-width: 1350px) {
+                align-self: center;
+            }
+            @media (max-width: 640px) {
+                font-size: 0.87em;
+                margin: 4px 0 10px 0;
+            }
+            @media only screen //iPhone X Landscape
+            and (min-device-width : 375px) 
+            and (max-device-width : 812px) 
+            and (-webkit-device-pixel-ratio : 3)
+            and (orientation : landscape) {
+                margin: 4px 0 5px 0;
+            }
+            @media only screen //iPhone 6,7,8 Galaxy S9/S9+ Landscape
+            and (min-device-width : 360px) 
+            and (max-device-width : 740px) 
+            and (orientation : landscape) {
+                margin: 4px 0 5px 0;
+            }
+        }
+        
+        .active {
+            opacity: 1;  
+        }    
+    }
+    
+    .input-div-roman {
+        order: 3;
+        
+        @media only screen //iPhone X Landscape
+        and (min-device-width : 375px) 
+        and (max-device-width : 812px) 
+        and (-webkit-device-pixel-ratio : 3)
+        and (orientation : landscape) {
+            margin-top: -5px 0 15px 0;
+        }
+        @media only screen //iPhone 6,7,8 Galaxy S9/S9+ Landscape
+        and (min-device-width : 360px) 
+        and (max-device-width : 740px) 
+        and (orientation : landscape) {
+            margin-top: -35px 0 15px 0;   
+        }
+        @media only screen //iPhone 6,7,8 Portrait
+        and (min-device-width : 375px) 
+        and (max-device-width : 667px) 
+        and (orientation : portrait) {
+            margin-top: -30px;
+        }
+        
+        .roman {
+            text-transform: uppercase;
+             &:hover {
+                cursor:default;
+            }    
+        }
+    }
+    
+    input {
+        border: none;
+        border-bottom: 18px solid $font-color;
+        color: $font-color;
+        background-color: transparent;
+        padding: 0;
+        padding-bottom: 5px;
+        font-size: 4em;
+        text-align: center;
+        box-shadow: 0px 25px 10px -10px rgba(0,0,0,0.6);
+        font-family: "Playfair Display", sans-serif;
+        width: 600px;
+        &:focus {
+            outline: none;
+        } 
+        
+        @media (max-width: 1060px) {
+            margin-top: 0px;
+        }
+        @media (max-width: 640px) {
+            width: 300px;
+            font-size: 2.5em;
+            border-bottom: 8px solid $font-color;
+        }
+        @media only screen //iPhone X Landscape
+        and (min-device-width : 375px) 
+        and (max-device-width : 812px) 
+        and (-webkit-device-pixel-ratio : 3)
+        and (orientation : landscape) {
+            margin-top: -30px; 
+            border-bottom: 8px solid $font-color;
+            font-size: 2.5em;
+            width: 500px;
+        }
+        @media only screen //iPhone 6,7,8 Galaxy S9/S9+ Landscape
+        and (min-device-width : 360px) 
+        and (max-device-width : 740px) 
+        and (orientation : landscape) {
+            margin-top: -10px; 
+            border-bottom: 8px solid $font-color;
+            font-size: 2.5em;
+            width: 500px;
+        }
+    }
+    
+    ::placeholder { font-size: 0.8em; text-transform: none;} 
+    ::-webkit-input-placeholder { opacity: 0.75; -webkit-transition: opacity .5s; transition: opacity .5s; }  /* Chrome <=56, Safari < 10 */
+    :-moz-placeholder { opacity: 0.75; -moz-transition: opacity .5s; transition: opacity .5s; } /* FF 4-18 */
+    ::-moz-placeholder { opacity: 0.75; -moz-transition: opacity .5s; transition: opacity .5s; } /* FF 19-51 */
+    :-ms-input-placeholder { opacity: 0.75; -ms-transition: opacity .5s; transition: opacity .5s; } /* IE 10+ */
+    ::placeholder { opacity: 0.75; transition: opacity .5s; } /* Modern Browsers */
+
+    .arabic:focus::-webkit-input-placeholder { opacity: 0; } /* Chrome <=56, Safari < 10 */
+    .arabic:focus:-moz-placeholder { opacity: 0; } /* FF 4-18 */
+    .arabic:focus::-moz-placeholder { opacity: 0; } /* FF 19-50 */
+    .arabic:focus:-ms-input-placeholder { opacity: 0; } /* IE 10+ */
+    .arabic:focus::placeholder { opacity: 0; } /* Modern Browsers */
+    
+    .equal-sign {
+        order: 2;
+        font-size: 9em;
+        text-shadow: 0px 10px 9px rgba(0,0,0,0.6);
+        margin-top: -70px;
+        
+        @media (max-width: 1350px) {
+            align-self: center;
+        }
+        @media (max-width: 1060px) {
+            font-size: 5em;
+        }
+        @media only screen //iPhone X Landscape
+        and (min-device-width : 375px) 
+        and (max-device-width : 812px) 
+        and (-webkit-device-pixel-ratio : 3)
+        and (orientation : landscape) {
+            margin-top: -40px;
+            font-size: 5em;
+        }
+        @media only screen //iPhone 6,7,8 Galaxy S9/S9+ Landscape
+        and (min-device-width : 360px) 
+        and (max-device-width : 740px) 
+        and (orientation : landscape) {
+            margin: -55px 0 5px 0;
+            font-size: 5em;
+        }
+        @media only screen //iPhone 6,7,8 Portrait
+        and (min-device-width : 375px) 
+        and (max-device-width : 667px) 
+        and (orientation : portrait) {
+            margin-top: -40px;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: darken($font-color, 15%);
+    color: $base-color;
+    
+    @media only screen //iPhone X Landscape
+        and (min-device-width : 375px) 
+        and (max-device-width : 812px) 
+        and (-webkit-device-pixel-ratio : 3)
+        and (orientation : landscape) {
+            font-size: 0.9em;
+        }
+    @media only screen //iPhone 6,7,8 Galaxy S9/S9+ Landscape
+        and (min-device-width : 360px) 
+        and (max-device-width : 740px) 
+        and (orientation : landscape) {
+            font-size: 0.9em;
+        }
+    
+    a {
+        text-decoration: none;
+        color: $base-color;
+        font-weight: 700;
+        &:hover {
+            font-size: 1.1em;
+        }
+    }   
+}
